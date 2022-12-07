@@ -21,7 +21,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"C:/Users/kelle/OneDrive/Desktop/UnityUCF/Tutorial3/-Tutorial3-Challenge3/Tutorial3/WebGL Builds;;;;;;;;;\"}"
+                "value": "{\"m_Value\":\"C:/Users/kelle/OneDrive/Desktop/UnityUCF/Tutorial3/-Tutorial3-Challenge3/Tutorial3/Challenge Build;C:/Users/kelle/OneDrive/Desktop/UnityUCF/Tutorial3/-Tutorial3-Challenge3/Tutorial3/WebGL Builds;;;;;;;;\"}"
             }
         ]
     }

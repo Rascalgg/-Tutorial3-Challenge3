@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3790087535143000762}
   m_Layer: 8
   m_Name: Ruby
-  m_TagString: Untagged
+  m_TagString: RubyController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,12 +103,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3bafb4430f3a6f418328d0f0af4bce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
   maxHealth: 5
-  projectilePrefab: {fileID: 4917031100913319347, guid: eff50d6b5595aa445bf78bb85a638735, type: 3}
+  throwSound: {fileID: 8300000, guid: b2edfd40873655249ba0e01a5cf705be, type: 3}
+  hitSound: {fileID: 8300000, guid: 9b1bb1f450b7d444fa4a8019d13519a7, type: 3}
+  backgroundManager: {fileID: 0}
   timeInvincible: 2
+  projectilePrefab: {fileID: 4917031100913319347, guid: eff50d6b5595aa445bf78bb85a638735, type: 3}
+  currentAmmo: 4
+  ammoText: {fileID: 0}
   hitEffect: {fileID: 3129803868031691900}
   healthPickup: {fileID: 1214640213136379514}
+  fixedText: {fileID: 0}
+  WinTextObject: {fileID: 0}
+  LoseTextObject: {fileID: 0}
 --- !u!50 &6786657149080537202
 Rigidbody2D:
   serializedVersion: 4
@@ -143,7 +151,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.011646599, y: -0.537786}
+  m_Offset: {x: -0.011646599, y: -0.582394}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -154,7 +162,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6755038, y: 1.1883082}
+  m_Size: {x: 0.6755038, y: 1.0990922}
   m_EdgeRadius: 0
 --- !u!95 &2982216343344025809
 Animator:

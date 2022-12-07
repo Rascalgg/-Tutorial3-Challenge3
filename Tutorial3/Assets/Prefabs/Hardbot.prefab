@@ -149,8 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 585ce12e1ff0a4b4095cc41b3d06ce2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  vertical: 1
+  speed: 4
+  vertical: 0
   changeTime: 4
   smokeEffect: {fileID: 8064928281208864156}
 --- !u!95 &9028044217717302171

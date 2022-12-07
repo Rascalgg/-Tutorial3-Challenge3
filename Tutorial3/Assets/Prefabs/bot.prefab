@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16a43fca6a5b3b408cdae411dae1a51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3
   vertical: 1
   changeTime: 3
   smokeEffect: {fileID: 1065418244510006325}

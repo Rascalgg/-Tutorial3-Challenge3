@@ -16,6 +16,8 @@ public class HardEnemyController : MonoBehaviour
     bool broken = true;
     
     Animator animator;
+
+    private RubyController rubyController;
     
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,9 @@ public class HardEnemyController : MonoBehaviour
         rigidbody2D = GetComponent<Rigidbody2D>();
         timer = changeTime;
         animator = GetComponent<Animator>();
+
+        GameObject rubyControllerObject = GameObject.FindWithTag("RubyController");
+        rubyController = rubyControllerObject.GetComponent<RubyController>();
     }
 
     void Update()
@@ -87,5 +92,10 @@ public class HardEnemyController : MonoBehaviour
         animator.SetTrigger("Fixed");
         
         smokeEffect.Stop();
+
+        if (rubyController != null)
+        {
+            rubyController.FixedRobots(1);
+        }
     }
 }
